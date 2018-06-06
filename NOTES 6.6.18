@@ -1,0 +1,33 @@
+if (condition is met)
+  do (some instruction)
+else if (other condition) <-- WITH PYTHON USE ELIF not ELSE IF
+  do (other instruction)
+else 
+  do (last resort)
+
+If and Then Statements are one of the three big types of objects we'll be working with
+Booleans <True or False Statements>
+
+Numbers
+  a decimal makes an integer a float
+  j makes the integer complex
+  
+Strings
+a sequence of one or more characters enclosed in quotes
+
+Loops
+  for Loops
+    {a,b,c} = {0,4,7} = A
+    for i in A
+      print(2+i)
+     
+   while Loops
+    while (some condition is met)
+    do some instruction
+    
+    x=1
+    while x < 3
+    x = x+1
+    
+ Homework:
+  Read through Python Tutorial on List, Set, Tuple etc.
