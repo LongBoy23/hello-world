@@ -18,6 +18,15 @@ i = 3
 Write a function that takes a vector (use a list) and a scalar and returns the scalar/vector multiplication
 Basically, if x exists in C, a exists in C^m --> Compute xa
 DOCUMENTATION _ 
+def vector_mult(vector,scalar):
+  b =[]
+  for x in vector:
+    b.append(scalar*x)
+  return b
+  
+vector = [1,2,3]
+scalar = 42
+print(vector_mult(vector,scalar))
 
 Write a function that takes 2 vectors as arguments and returns their sum
 DOCUMENTATION _
