@@ -30,9 +30,30 @@ print(vector_mult(vector,scalar))
 
 Write a function that takes 2 vectors as arguments and returns their sum
 DOCUMENTATION _
+# (vect1,vect2) -> vect3
+# We assume our two vectors to have the same length
+def Sum2Vectors(vect1, vect2):
+  # initialized vector to hold sums
+  sumVector = []
+  # defined the length of both vectors using vect1
+  length = len(vect1)
+  # iterate through a range [0 , length-1]
+  for index in range(length):
+    # Store sum of vect1 and vect2 at same index
+    indexSum = vect1[index] + vect2[index]
+    # Append index sum to sumVector
+    sumVector.append(indexSum)
 
+  return sumVector
+
+vector1 = [1,2,3,4]
+vector2 = [23,21,87,1738]
+
+print(Sum2Vectors(vector1,vector2))
+  
 Write a function that takes a vector as its argument and adds 1 to each element of the vector until they are all greater than 5
 DOCUMENTATION _
+
 
 Write a function that takes a list and returns true if the number 5 is in the list and returns false if it is not
 DOCUMENTATION _
