@@ -1,0 +1,19 @@
+Orthongonal Vectors
+if  x = [[a+bi],[c-di]]
+
+def a pair of vectors x,y are orthogonal if x*y = 0 or equivalently y*x = 0
+  a pair of sets X and Y are orthogonal if for all x [epsilon] X , y [epsilon] Y 
+  
+Norm of vector
+A vector x is said to be normal if ||x|| = 1
+
+A set of non zero vectors is called orthonormal if for x,xj exists in s xi*xj = 0 if i(x=)j and xi*xj = 1 if i = j
+
+let there be a set of orthogonal vectors. now let r be an arbitrary vector of compatible dimesions. where r is orthogonal to our set of vectors
+
+NormsL A vector norm is a function from a set V to the non-negative real numbers ||x||:V---> RR+
+
+Norm Axioms:
+  1. Norm of X is greater than or equal to zero and the norm is zero iff x = 0
+  2.||x+y|| is lessthan or equal to ||x||+||y||
+  3. if a is a scalar ||ax||=|a|||x||
