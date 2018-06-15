@@ -1,0 +1,9 @@
+$$HOMEWORK$$
+Write a function that takes a vector and returns a normalized vector
+
+$$HOMEWORK$$
+Write a function that takes a vector and a set of orthonormal vectors and returns the orthogonal decomposition r = v-(q.0(star)v)q.0-....
+
+$$HOMEWORK$$
+Write a function that takes a vector and a orthonormal set of vectors and returns a vector which is normal and orthogonal to the set or 0
+
