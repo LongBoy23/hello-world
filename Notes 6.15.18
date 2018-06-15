@@ -1,0 +1,35 @@
+Big O Notation
+  We say that a function f(t) is O(g(t)) for some constant c such that lim (t->0) f(t) is <= c x g(t)
+  
+  We will define an implementation of an algorithm on a computer which satisfies the fundamental axiom of floating-point arithmetic as a
+  function ~f: x --> y where x is data, y is solutions
+  fl(x) = ~x
+  fl(x): RR --> F
+  
+Absolute Accuracy : ||~f(x)-f(x)||            Relative Accuracy (||~f(x)-f(x)||)/||f(x)||  
+      In general if relative accuracy is o(eps.m) then our algorithm is stable
+
+Stability
+  We say that the algorithm ~f is (forwards) stable if *Relative Accuracy* = O(eps.m) where (||~x-x||)/||x|| = O(eps.m)
+  A forward stable algorithm gives nearly the right answer to nearly the right question
+  
+Backwards Stability
+  We say that if ~f is backwards stable if for all x eps X, ~f(x) = f(~x) where (||~x-x||)/||x|| = O(eps.m)
+  A backwards stable algorithm gives exactly the right answer to nearly the right question.
+  
+For a problem f and algorithm ~f defined on finite-dimensional sets X & Y the definitions of accuracy, 
+stability and backwards stability are independent of your choice of norm.
+
+Stability of floating point Addition
+  Let ~f be the algorithm for floating point addition so 
+  ~f(x.1,x.2) = fl(x.1) (mach.add) fl(x.2) = (fl(x.1)+fl(x.2)(1+eps.3), |eps.3| <= eps.m = [[x.1(1+eps.0)]+[x.2(1+eps.1)]](1+eps.3) &&
+  fl(x.1) = x.1(1+eps.0)
+  f2(x.2) = x.2(1+eps.1)
+  && = x.1(1+eps.0)(1+eps.3)+x.2(1+eps.1)(1+eps.3)
+     = x.1(1+(eps.0+eps.3+eps.0*eps.3)) + x.2(1+(eps.1+eps.3+eps.1*eps.3)
+     = x.1(1+eps.4)+x.2(1+eps.5)
+  |eps.4|,|eps.5| <= 2*eps.m + O((eps.m)^2)
+    so ~f(x) = fl(x.1) (mach.add) fl(x.2) is exactly equal to ~x.1+~x.2 where ~x.1 and ~x.2 satisfy |~x.1-x.1|/|x.1| = O(eps.m) 
+    & likewise |~x.2-x.2|/|x.2| = O(eps.m)
+    
+  
