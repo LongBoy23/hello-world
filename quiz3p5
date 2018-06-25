@@ -1,0 +1,59 @@
+def infNorm(vector):
+    
+    """
+    1) check if empty vector.
+    2) If empty, print Error and return null.
+    3) If not empty vector, 
+    4) initialize currentMax to the absolute value of first element in vector. 
+    5) iterate over remaining vector elements.
+    6) during iteration
+        if absolute value of element of vector 
+        is greater than currentMax, then assign abs(element) to currentMax.
+    7) return currentMax.
+    """
+    #current max is used as a variable in this scenario NOT A FUNCTION
+    if(len(vector) == 0) :
+        print("ERROR: Empty Vector");
+        return null;
+        
+    else :
+        currentMax = abs(vector[0]);
+        
+        for i in range(1,len(vector)):
+            if(abs(vector[i]) > currentMax):
+                currentMax = vector[i];
+    
+        return currentMax
+
+"""Test 1 Empty Vector
+vec01 = [];
+print(infNorm(vec01));
+"""
+
+"""Test 2 Non-Empty Vector
+print(infNorm([1,2,3,4,5,6,7,-11,-33,-55]));
+"""
+
+def normalize(vector) :
+    """
+    1) check if empty vector.
+    2) If empty, print Error and return null.
+    3) If not empty vector, 
+    4) compute and store infNorm in infNorm
+    5) Iterate over range [0, len-1]
+    6) during iteration
+        compute element / infNorm store in current vector index.
+    """
+    
+    if (len(vector) == 0):
+        print("ERROR: Empty Vector");
+        return [];
+    else:
+        currentMax = infNorm(vector);
+        normalize=[]
+        for i in range(0,1-len(vector)):
+          normalize.append((1/currentMax)*vector[i]
+    print normalVector
+
+vector = [0,111111,7];
+print(normalize(vector))
